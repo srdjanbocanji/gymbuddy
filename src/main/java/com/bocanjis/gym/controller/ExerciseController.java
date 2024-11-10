@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
+import java.util.List;
+
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/exercises")
@@ -39,5 +41,10 @@ public class ExerciseController {
     @DeleteMapping("/{id}")
     public ResponseEntity<Mono<Void>> deleteExercise(String id) {
         return ResponseEntity.ok().body(exerciseService.deleteExercise(id));
+    }
+
+    @PostMapping("/batch-insert")
+    public ResponseEntity<Flux<ExerciseDto>> createExercises(@RequestBody List<ExerciseDto> exerciseDtos) {
+        return ResponseEntity.ok(exerciseService.batchInsertExercises(exerciseDtos));
     }
 }

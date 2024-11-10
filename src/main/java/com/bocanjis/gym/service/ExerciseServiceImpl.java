@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -31,7 +32,8 @@ public class ExerciseServiceImpl implements ExerciseService {
 
     @Override
     public Mono<ExerciseDto> updateExercise(ExerciseDto exerciseDto) {
-        return exerciseRepository.save(Optional.of(exerciseDto)
+        return exerciseRepository
+                .save(Optional.of(exerciseDto)
                         .map(exerciseMapper.toExercise())
                         .get())
                 .map(exerciseMapper.toExerciseDto());
@@ -45,5 +47,12 @@ public class ExerciseServiceImpl implements ExerciseService {
     @Override
     public Mono<ExerciseDto> getExercise(String exerciseId) {
         return exerciseRepository.findById(exerciseId).map(exerciseMapper.toExerciseDto());
+    }
+
+    @Override
+    public Flux<ExerciseDto> batchInsertExercises(List<ExerciseDto> exerciseDtos) {
+        return exerciseRepository
+                .saveAll(exerciseDtos.stream().map(exerciseMapper.toExercise()).toList())
+                .map(exerciseMapper.toExerciseDto());
     }
 }

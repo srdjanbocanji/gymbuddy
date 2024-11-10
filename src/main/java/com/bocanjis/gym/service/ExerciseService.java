@@ -4,6 +4,8 @@ import com.bocanjis.gym.model.ExerciseDto;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
+import java.util.List;
+
 public interface ExerciseService {
 
     Flux<ExerciseDto> getAllExercises();
@@ -11,4 +13,5 @@ public interface ExerciseService {
     Mono<ExerciseDto> updateExercise(ExerciseDto exerciseDto);
     Mono<Void> deleteExercise(String exerciseId);
     Mono<ExerciseDto> getExercise(String exerciseId);
+    Flux<ExerciseDto> batchInsertExercises(List<ExerciseDto> exerciseDtos);
 }

@@ -1,0 +1,77 @@
+[
+  {
+    "name": "Bench Press",
+    "description": "A compound exercise targeting the chest, triceps, and shoulders. Perform lying on a bench, pressing a barbell or dumbbells from chest level up to arms' length.",
+    "tags": ["chest", "triceps", "shoulders"]
+  },
+  {
+    "name": "Incline Dumbbell Press",
+    "description": "Targets the upper chest and shoulders, performed on an incline bench with dumbbells pressed from shoulder height to arms' length.",
+    "tags": ["chest", "shoulders"]
+  },
+  {
+    "name": "Push-Up",
+    "description": "A bodyweight exercise that targets the chest, triceps, and shoulders, performed in a plank position while lowering and raising the body.",
+    "tags": ["chest", "triceps", "shoulders"]
+  },
+  {
+    "name": "Overhead Press",
+    "description": "A shoulder exercise performed standing or seated, pressing a barbell or dumbbells overhead, which also engages the triceps.",
+    "tags": ["shoulders", "triceps"]
+  },
+  {
+    "name": "Dumbbell Lateral Raise",
+    "description": "Isolates the side deltoids, performed by raising dumbbells to the side while keeping arms slightly bent.",
+    "tags": ["shoulders"]
+  },
+  {
+    "name": "Barbell Curl",
+    "description": "An isolation exercise targeting the biceps, performed by curling a barbell from hip level to shoulder level while keeping the elbows stationary.",
+    "tags": ["biceps"]
+  },
+  {
+    "name": "Hammer Curl",
+    "description": "Targets the biceps and brachialis, performed by curling dumbbells with a neutral grip from hip to shoulder level.",
+    "tags": ["biceps", "forearms"]
+  },
+  {
+    "name": "Lat Pulldown",
+    "description": "A back exercise performed on a cable machine, pulling a bar from overhead down to the chest, engaging the lats and biceps.",
+    "tags": ["back", "biceps"]
+  },
+  {
+    "name": "Pull-Up",
+    "description": "A bodyweight exercise targeting the lats, biceps, and upper back, performed by pulling oneself up to a bar.",
+    "tags": ["back", "biceps"]
+  },
+  {
+    "name": "Deadlift",
+    "description": "A compound lift targeting the back, glutes, and hamstrings. Perform by lifting a barbell from the ground up to standing.",
+    "tags": ["back", "glutes", "hamstrings"]
+  },
+  {
+    "name": "Squat",
+    "description": "A compound exercise targeting the quads, glutes, and hamstrings, performed by lowering the hips from a standing position and then standing back up.",
+    "tags": ["quads", "glutes", "hamstrings"]
+  },
+  {
+    "name": "Leg Press",
+    "description": "A machine-based exercise that primarily targets the quads, with secondary activation in the glutes and hamstrings.",
+    "tags": ["quads", "glutes", "hamstrings"]
+  },
+  {
+    "name": "Lunges",
+    "description": "A unilateral leg exercise targeting the quads, glutes, and hamstrings, performed by stepping forward or backward into a lunge position.",
+    "tags": ["quads", "glutes", "hamstrings"]
+  },
+  {
+    "name": "Leg Curl",
+    "description": "An isolation exercise targeting the hamstrings, performed on a machine where the heels are brought toward the glutes.",
+    "tags": ["hamstrings"]
+  },
+  {
+    "name": "Calf Raise",
+    "description": "A lower leg exercise focusing on the calves, performed by raising the heels from the ground while standing or seated.",
+    "tags": ["calves"]
+  }
+]
