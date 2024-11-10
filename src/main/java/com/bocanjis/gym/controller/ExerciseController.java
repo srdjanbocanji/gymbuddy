@@ -26,12 +26,12 @@ public class ExerciseController {
     }
 
     @PostMapping
-    public ResponseEntity<Mono<ExerciseDto>> createExercise(ExerciseDto exerciseDto) {
+    public ResponseEntity<Mono<ExerciseDto>> createExercise(@RequestBody ExerciseDto exerciseDto) {
         return ResponseEntity.ok(exerciseService.insertExercise(exerciseDto));
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<Mono<ExerciseDto>> updateExercise(String id, ExerciseDto exerciseDto) {
+    public ResponseEntity<Mono<ExerciseDto>> updateExercise(String id, @RequestBody ExerciseDto exerciseDto) {
         exerciseDto.setId(id);
         return ResponseEntity.ok(exerciseService.updateExercise(exerciseDto));
     }
